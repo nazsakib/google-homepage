@@ -1,0 +1,215 @@
+/* 
+    Sakib MD Nazmush
+     smdnazmush19@gmail.com
+     github.com/nazsakib
+
+    >> Cloning Google Homepage
+
+*/
+
+
+
+
+
+/********************* Basic reset settings *********************/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --gray-100: #d0d0d0;
+    --gray-200: #c0c0c0;
+    --gray-300: #b8b8b8;
+    --gray-400: #a9a9a9;
+    --gray-500: #707070;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+}
+a:hover {
+    text-decoration: underline;
+}
+/********************* End of basic resetting *********************/
+
+
+.section {
+    height: 100vh;
+}
+
+
+/********************* Navigation area starts *********************/
+svg {
+    width: 18px;
+    height: 18px;
+}
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 13px;
+}
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+.nav__item a {
+    color: #000000;
+    font-size: 12px;
+}
+.nav__item svg {
+    cursor: pointer;
+    fill: #636363;
+}
+.nav__item--profile img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 2px;
+    margin-right: 19px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.nav__item--profile img:hover {
+    border: 2px solid var(--gray-200);
+    transition: 0.3s;
+}
+/********************* Navigation area ends *********************/
+
+
+
+
+/********************* Main area starts *********************/
+.main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main__logo {
+    padding-bottom: 30px;
+}
+.form__group {
+    position: relative;
+}
+.form__logo--search {
+    position: absolute;
+    top: 17px;
+    left: 17px;
+    fill: var(--gray-400);
+}
+.form__logo--mic {
+    position: absolute;
+    right: 17px;
+    top: 17px;
+    cursor: pointer;
+}
+.form__search input {
+    width: 70vw;
+    padding: 15px;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 45px;
+    border: 1px solid rgb(201, 201, 201);
+    transition: box-shadow .1s;
+}
+.form__search input:hover {
+    box-shadow: 0 0 11px rgba(97, 95, 95, 0.2);
+}
+.button {
+    margin-top: 20px;
+}
+button {
+    background-color: #f8f9fa;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 8px 15px;
+    outline: none;
+    border: 1px solid transparent;
+    transition: .1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    border: 1px solid var(--gray-200);
+}
+.button__search {
+    margin-right: 10px;
+}
+.button__lucky {
+    margin-left: 10px;
+}
+/********************* Main area ends *********************/
+
+
+
+
+/********************* Footer area starts *********************/
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #f2f2f2;
+    width: 100%;
+}
+.footer__top {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.footer__text {
+    margin-left: 20px;
+}
+.footer__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer__navigation {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+.footer__nav > ul {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+/********************* Footer area ends *********************/
+
+
+
+/********************* Responsive area here *********************/
+
+@media all and (min-width: 768px) {
+    .form__search input {
+        width: 570px;
+    }
+}
+@media all and (min-width: 1200px) {
+    .footer__bottom {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .footer__nav {
+        padding: 0 32px;
+    }
+}
+
+/********************* Responsive ended here *********************/
